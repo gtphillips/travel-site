@@ -18,7 +18,16 @@
       padding-left: 18px;
       padding-right: 18px;
     }
+  }
 
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
   }
 
 /*counteract nested wrappers applying twice the padding*/
